@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "is-subset": "^0.1.1",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
-    "testcafe": "^2.3.1"
+    "testcafe": "^2.4.0"
   },
   "devDependencies": {
     "express": "^4.17.1",
