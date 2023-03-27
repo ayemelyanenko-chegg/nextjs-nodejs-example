@@ -106,24 +106,22 @@ const homepageNavbarComponentViewEvent: RioEventVerify = {
     data: {
       component_view: {
         component: {
-          name: 'nav bar',
-          region_name: 'top nav',
-          text: 'books|study|career|life',
-          type: 'component',
+          name: 'check out our demo page',
+          text: 'Check out our demo page',
+          type: 'link',
         },
       },
     },
-    event_type: 'com.chegg.clickstream_component_view',
+    event_type: 'net.citationmachine.clickstream_component_view',
     event_type_version: '3',
   },
   locator: {
     data: {
       component_view: {
         component: {
-          name: 'nav bar',
-          region_name: 'top nav',
-          text: 'books|study|career|life',
-          type: 'component',
+          name: 'check out our demo page',
+          text: 'Check out our demo page',
+          type: 'link',
         },
       },
     },
@@ -131,7 +129,7 @@ const homepageNavbarComponentViewEvent: RioEventVerify = {
 };
 
 fixture('Event test')
-    .page('https://www.chegg.com');
+    .page('https://www.citationmachine.net/');
 
 test.meta({
         testID: 't-0001',
@@ -140,6 +138,6 @@ test.meta({
         priority: 'p1',
       })
       .requestHooks(rioLogger)('Event test', async t => {
-   await t.wait(3000);
+   await t.wait(20000);
    await verifyRioEventv2(homepageNavbarComponentViewEvent);
 });
