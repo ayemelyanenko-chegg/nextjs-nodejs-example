@@ -72,6 +72,7 @@ async function verifyRioEventv2(
 ): Promise<void> {
   let foundEvents: event[] = await Promise.all(
     rioLogger.requests.map(async (r: any) => {
+      console.log(r.request.body);
       const body = JSON.parse(r.request.body);
 
       for (const subevent of body) {
