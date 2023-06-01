@@ -1,5 +1,5 @@
 import { ClientFunction, RequestLogger, t } from 'testcafe';
-import { expect } from 'chai';
+// import { expect } from 'chai';
 import { merge } from 'lodash';
 const isSubset = require('is-subset');
 

@@ -1,9 +1,8 @@
 import { t, Selector } from "testcafe";
-const loginUrl = `https://www.chegg.com/auth?action=login`;
+const loginUrl = `https://www.citethisforme.com/login`;
 const emailForSignIn = Selector('input[id*="email"]');
 const passForSignin = Selector('input[type="password"]');
-const signInButton = Selector("button").withText("Sign in");
-const closeButton = Selector('*[aria-label="Cancel"]');
+const signInButton = Selector('button').withText('Sign in');
 
 // user log in/log out methods
 async function userLogInWithCredentials(
@@ -57,7 +56,7 @@ test.meta({
   })(
     'Login test',
     async (t: TestController) => {
-        await userLogInWithCredentials('test_email_chegg@chegg.com', 'Password1');
+        await userLogInWithCredentials('sample_acct@chegg.com', 'Password@123');
     }
   );
 
@@ -67,7 +66,7 @@ test.meta({
   })(
     'Login test',
     async (t: TestController) => {
-        await userLogInWithCredentials('test_email_chegg@chegg.com', 'Password1');
+        await userLogInWithCredentials('sample_acct@chegg.com', 'Password@123');
     }
   );
 
@@ -77,7 +76,7 @@ test.meta({
   })(
     'Login test',
     async (t: TestController) => {
-        await userLogInWithCredentials('test_email_chegg@chegg.com', 'Password1');
+        await userLogInWithCredentials('sample_acct@chegg.com', 'Password@123');
     }
   );
 
@@ -87,7 +86,7 @@ test.meta({
   })(
     'Login test',
     async (t: TestController) => {
-        await userLogInWithCredentials('test_email_chegg@chegg.com', 'Password1');
+        await userLogInWithCredentials('sample_acct@chegg.com', 'Password@123');
     }
   );
 
@@ -97,7 +96,7 @@ test.meta({
   })(
     'Login test',
     async (t: TestController) => {
-        await userLogInWithCredentials('test_email_chegg@chegg.com', 'Password1');
+        await userLogInWithCredentials('sample_acct@chegg.com', 'Password@123');
     }
   );
 
