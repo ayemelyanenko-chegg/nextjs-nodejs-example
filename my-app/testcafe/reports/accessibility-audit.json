@@ -1,0 +1,75 @@
+[
+  {
+    "id": "aria-allowed-attr",
+    "impact": "critical",
+    "tags": [
+      "cat.aria",
+      "wcag2a",
+      "wcag412"
+    ],
+    "description": "Ensures ARIA attributes are allowed for an element's role",
+    "help": "Elements must only use allowed ARIA attributes",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-attr?application=axeAPI",
+    "nodes": [
+      {
+        "any": [],
+        "all": [
+          {
+            "id": "aria-allowed-attr",
+            "data": [
+              "aria-expanded=\"false\""
+            ],
+            "relatedNodes": [],
+            "impact": "critical",
+            "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+          }
+        ],
+        "none": [],
+        "impact": "critical",
+        "html": "<div aria-expanded=\"false\" class=\"styled__SearchGlassContainer-sc-166v17c-1 jMBZDk\">",
+        "target": [
+          ".styled__SearchGlassContainer-sc-166v17c-1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "duplicate-id",
+    "impact": "minor",
+    "tags": [
+      "cat.parsing",
+      "wcag2a",
+      "wcag411"
+    ],
+    "description": "Ensures every id attribute value is unique",
+    "help": "id attribute value must be unique",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id?application=axeAPI",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "duplicate-id",
+            "data": "J6rCbzwUAiCj5ivnPN71C5BWiI4",
+            "relatedNodes": [
+              {
+                "html": "<script id=\"J6rCbzwUAiCj5ivnPN71C5BWiI4\" async=\"\" src=\"//cdn.confiant-integrations.net/J6rCbzwUAiCj5ivnPN71C5BWiI4/video/config.js\"></script>",
+                "target": [
+                  "script[async=\"\"]:nth-child(6)"
+                ]
+              }
+            ],
+            "impact": "minor",
+            "message": "Document has multiple static elements with the same id attribute: J6rCbzwUAiCj5ivnPN71C5BWiI4"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "minor",
+        "html": "<script async=\"\" id=\"J6rCbzwUAiCj5ivnPN71C5BWiI4\" src=\"//cdn.confiant-integrations.net/video/202307261341/wrap.js\"></script>",
+        "target": [
+          "script[async=\"\"]:nth-child(5)"
+        ]
+      }
+    ]
+  }
+]

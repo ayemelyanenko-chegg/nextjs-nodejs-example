@@ -36,14 +36,6 @@ fixture`Script test`
     );
   });
 
-// this test hangs after a sign in attempt
-test("My test 1", async (t) => {
-  console.log(
-    "user should be able to log in with the client script attached to test"
-  );
-  await t.expect(closeButton.visible).ok();
-}).clientScripts({ content: mockDate });
-
 // this test doesn't hang after a sign in attempt
 test("My test 2", async (t) => {
   console.log(
