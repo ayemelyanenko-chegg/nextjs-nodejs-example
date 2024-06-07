@@ -70,7 +70,7 @@
     "patch-package": "^6.5.1",
     "postinstall-postinstall": "^2.1.0",
     "react": "^18.2.0",
-    "testcafe": "^3.5.0",
+    "testcafe": "^3.6.0",
     "testcafe-browser-provider-browserstack": "^1.15.1",
     "testcafe-lighthouse": "^2.0.0",
     "testcafe-react-selectors": "^5.0.2",
