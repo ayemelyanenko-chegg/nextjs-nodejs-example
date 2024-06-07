@@ -4619,13 +4619,6 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-esotope-hammerhead@0.6.7:
-  version "0.6.7"
-  resolved "https://registry.npmjs.org/esotope-hammerhead/-/esotope-hammerhead-0.6.7.tgz"
-  integrity sha512-nejJRHWvdoymlWnAXJGm8qfaK1hQ7NiMnTQzMSHPUzBrY7Nogu8O0Q6/HcY8AvY58pkkq2loto7oDDZ0zXYQcg==
-  dependencies:
-    "@types/estree" "0.0.46"
-
 esotope-hammerhead@0.6.8:
   version "0.6.8"
   resolved "https://chegg-084139392869.d.codeartifact.us-west-2.amazonaws.com/npm/js-chegg/esotope-hammerhead/-/esotope-hammerhead-0.6.8.tgz#98f3dbf533e859de8d54e5bab4a930214f505810"
